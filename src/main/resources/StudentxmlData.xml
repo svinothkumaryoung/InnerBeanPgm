@@ -1,0 +1,33 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="sn" class="com.cognizant.innerbean.StudentName">
+        <property name="vinoth">
+            <bean class="com.cognizant.innerbean.StudentDetails">
+                <property name="registerNo" value="66666"/>
+                <property name="name" value="vinothkumar selvaarasan"/>
+                <property name="Address" value="chennai"/>
+            </bean>
+        </property>
+        <property name="ashok">
+            <bean class="com.cognizant.innerbean.StudentDetails">
+                <property name="registerNo" value="66667"/>
+                <property name="name" value="Ashokkumar selvaarasan"/>
+                <property name="Address" value="karur chennai"/>
+            </bean>
+        </property>
+        <property name="roshan">
+            <bean class="com.cognizant.innerbean.StudentDetails">
+                <property name="registerNo" value="66668"/>
+                <property name="name" value="roshan niranjan vinothkumar"/>
+                <property name="Address" value="chennai"/>
+            </bean>
+        </property>
+
+
+
+    </bean>
+
+
+</beans>
